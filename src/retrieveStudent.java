@@ -4,8 +4,7 @@ import java.sql.Statement;
 import java.util.Scanner;
 
 public class retrieveStudent {
-    public static void retrieve() {
-        Scanner scan=new Scanner(System.in);
+    public static void retrieve(Scanner scan) {
         try {
             System.out.println("\n================ Retrieve Student Data ================");
             System.out.println("1 : Individual Student");
