@@ -1,7 +1,4 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
-
-import static java.lang.System.exit;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,9 +23,9 @@ public class Main {
 
             switch (choice) {
                 case 1 -> addStudent.add();
-                case 2 -> retrieveStudent.retrieve();
-                case 3 -> updateStudent.update();
-                case 4 -> dltStudent.delete();
+                case 2 -> retrieveStudent.retrieve(scan);
+                case 3 -> updateStudent.update(scan);
+                case 4 -> dltStudent.delete(scan);
                 case 5 -> exitMenu();
                 default -> System.out.println("\nEnter Valid input from menu......");
             }
